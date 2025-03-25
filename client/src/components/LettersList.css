@@ -1,0 +1,135 @@
+/* client/src/components/LettersList.css */
+.letters-container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .letters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .letters-header h1 {
+    color: #333;
+  }
+  
+  .new-letter-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .new-letter-button:hover {
+    background-color: #3367d6;
+  }
+  
+  .new-letter-button svg {
+    margin-right: 8px;
+  }
+  
+  .loading-letters {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+  }
+  
+  .error-message {
+    background-color: #fce8e6;
+    color: #c5221f;
+    padding: 16px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .no-letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+  }
+  
+  .empty-state {
+    text-align: center;
+    max-width: 400px;
+  }
+  
+  .google-drive-icon {
+    font-size: 48px;
+    color: #4285f4;
+    margin-bottom: 16px;
+  }
+  
+  .empty-state h2 {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .empty-state p {
+    color: #666;
+  }
+  
+  .letters-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .letter-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .letter-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .letter-title {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .letter-date {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .letter-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .view-button {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .view-button:hover {
+    background-color: #e4e4e4;
+  }
+  
+  .view-button svg {
+    margin-right: 6px;
+    font-size: 12px;
+  }

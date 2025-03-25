@@ -1,0 +1,277 @@
+/* client/src/components/Login.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 20px;
+  }
+  
+  .login-content {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .login-left {
+    flex: 1.2;
+    padding: 60px 40px;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  
+  .login-right {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+  }
+  
+  .app-info {
+    max-width: 500px;
+  }
+  
+  .app-info h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #4285F4;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #5f6368;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .features {
+    margin-top: 30px;
+  }
+  
+  .feature-item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+  }
+  
+  .feature-icon {
+    font-size: 28px;
+    margin-right: 20px;
+    color: #4285F4;
+    background-color: rgba(66, 133, 244, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .feature-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #202124;
+    font-weight: 600;
+  }
+  
+  .feature-text p {
+    color: #5f6368;
+    line-height: 1.5;
+  }
+  
+  .login-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    background-color: white;
+  }
+  
+  .login-header {
+    margin-bottom: 30px;
+  }
+  
+  .login-header h2 {
+    font-size: 1.8rem;
+    color: #202124;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .login-header p {
+    color: #5f6368;
+    font-size: 1rem;
+  }
+  
+  .google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #202124;
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .google-button:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 1px 6px rgba(60, 64, 67, 0.15);
+  }
+  
+  .google-icon {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  
+  .login-footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #5f6368;
+  }
+  
+  .login-footer a {
+    color: #4285F4;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 900px) {
+    .login-content {
+      flex-direction: column;
+      max-width: 500px;
+    }
+    
+    .login-left, .login-right {
+      padding: 30px;
+    }
+    
+    .app-info h1 {
+      font-size: 2.2rem;
+    }
+    
+    .tagline {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    
+    .feature-item {
+      margin-bottom: 20px;
+    }
+    
+    .feature-icon {
+      font-size: 22px;
+      width: 40px;
+      height: 40px;
+    }
+    
+    .login-card {
+      box-shadow: none;
+      padding: 20px 0;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .login-container {
+      padding: 10px;
+    }
+    
+    .login-content {
+      border-radius: 8px;
+    }
+    
+    .login-left, .login-right {
+      padding: 20px;
+    }
+    
+    .app-info h1 {
+      font-size: 1.8rem;
+    }
+    
+    .tagline {
+      font-size: 0.9rem;
+    }
+    
+    .feature-item {
+      margin-bottom: 15px;
+    }
+    
+    .feature-text h3 {
+      font-size: 1rem;
+    }
+    
+    .feature-text p {
+      font-size: 0.9rem;
+    }
+    
+    .login-header h2 {
+      font-size: 1.5rem;
+    }
+    
+    .google-button {
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+    
+    .login-footer {
+      font-size: 0.7rem;
+    }
+  }
+  
+  /* Animation effects */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .app-info h1,
+  .tagline,
+  .feature-item,
+  .login-card {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .app-info h1 {
+    animation-delay: 0.1s;
+  }
+  
+  .tagline {
+    animation-delay: 0.2s;
+  }
+  
+  .feature-item:nth-child(1) {
+    animation-delay: 0.3s;
+  }
+  
+  .feature-item:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .feature-item:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+  
+  .login-card {
+    animation-delay: 0.3s;
+  }
